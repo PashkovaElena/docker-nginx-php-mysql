@@ -1,0 +1,8 @@
+/app/config/parameters.yml
+/app/vendor/
+/data/
+phpunit.xml
+.buildpath
+.project
+.settings
+
