@@ -1,8 +1,8 @@
-/app/config/parameters.yml
-/app/vendor/
+/application/config/parameters.yml
+/application/vendor/
 /data/
 phpunit.xml
 .buildpath
 .project
 .settings
-
+.idea

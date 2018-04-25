@@ -39,17 +39,17 @@ help:
 clean:
 	@rm -Rf data/db/mysql/*
 	@rm -Rf $(MYSQL_DUMPS_DIR)/*
-	@rm -Rf app/vendor
-	@rm -Rf app/composer.lock
-	@rm -Rf app/composer.json
-	@rm -Rf app/doc
-	@rm -Rf app/report
+	@rm -Rf application/vendor
+	@rm -Rf application/composer.lock
+	@rm -Rf application/composer.json
+	@rm -Rf application/doc
+	@rm -Rf application/report
 	
 composer-up:
-	@docker run --rm -v $(shell pwd)/app:/app composer update
+	@docker run --rm -v $(shell pwd)/application:/application composer update
 
 init:
-	@$(shell cp -n $(shell pwd)/app/composer.json.dist $(shell pwd)/app/composer.json 2> /dev/null)
+	@$(shell cp -n $(shell pwd)/application/composer.json.dist $(shell pwd)/application/composer.json 2> /dev/null)
 
 docker-start: init
 	@docker-compose up -d

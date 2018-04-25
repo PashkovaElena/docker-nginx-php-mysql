@@ -54,7 +54,7 @@ This project use the following ports :
 | Server     | Port |
 |------------|------|
 | MySQL      | 8989 |
-| PHPMyAdmin | 8080 |
+| PHPMyAdmin | 9090 |
 | Nginx      | 8000 |
 
 --------------
@@ -90,7 +90,7 @@ cd docker-nginx-php-mysql
 2. Open your favorite browser :
 
     * [http://localhost:8000](http://localhost:8000/)
-    * [http://localhost:8080](http://localhost:8080/) PHPMyAdmin (username: dev, password: dev)
+    * [http://localhost:9090](http://localhost:9090/) PHPMyAdmin (username: dev, password: dev)
 
 3. Stop and clear services
 
